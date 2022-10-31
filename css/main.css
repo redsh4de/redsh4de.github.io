@@ -6,6 +6,7 @@ body {
     justify-content: left;
     font-size: 150%;
 	user-select: none;
+	text-transform: lowercase;
 }
 
 /* Cool infinite background scrolling animation. * Twitter: @kootoopas */
