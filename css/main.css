@@ -5,6 +5,7 @@ body {
     display: flex;
     justify-content: left;
     font-size: 150%;
+	user-select: none;
 }
 
 /* Cool infinite background scrolling animation. * Twitter: @kootoopas */
