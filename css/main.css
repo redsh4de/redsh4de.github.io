@@ -1,5 +1,130 @@
 body {
-    background-color: #121212;
+    background-color: white;
     color: #ffffff;
     font-family: monospace;
+    display: flex;
+    justify-content: left;
+    font-size: 150%;
+}
+
+/* Cool infinite background scrolling animation. * Twitter: @kootoopas */
+/* Exo thin font from Google. */
+/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+/* Animations */
+ @-webkit-keyframes bg-scrolling-reverse {
+	 100% {
+		 background-position: 50px 50px;
+	}
+}
+ @-moz-keyframes bg-scrolling-reverse {
+	 100% {
+		 background-position: 50px 50px;
+	}
+}
+ @-o-keyframes bg-scrolling-reverse {
+	 100% {
+		 background-position: 50px 50px;
+	}
+}
+ @keyframes bg-scrolling-reverse {
+	 100% {
+		 background-position: 50px 50px;
+	}
+}
+ @-webkit-keyframes bg-scrolling {
+	 0% {
+		 background-position: 50px 50px;
+	}
+}
+ @-moz-keyframes bg-scrolling {
+	 0% {
+		 background-position: 50px 50px;
+	}
+}
+ @-o-keyframes bg-scrolling {
+	 0% {
+		 background-position: 50px 50px;
+	}
+}
+ @keyframes bg-scrolling {
+	 0% {
+		 background-position: 50px 50px;
+	}
+}
+/* Main styles */
+ body {
+	/* img size is 50x50 */
+	 background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyBAMAAADsEZWCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAVUExURWdnaAQEBBYWFwAAAGRkZBUVFRISE3xMYzIAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAoSURBVDjLY2BUwg4UGUxCsYMQhlQcMqGjMqMyozKjMkNCBkf5FhoCACEOnKmd1d8pAAAAAElFTkSuQmCC") repeat 0 0;
+	 -webkit-animation: bg-scrolling-reverse 0.92s infinite;
+	/* Safari 4+ */
+	 -moz-animation: bg-scrolling-reverse 0.92s infinite;
+	/* Fx 5+ */
+	 -o-animation: bg-scrolling-reverse 0.92s infinite;
+	/* Opera 12+ */
+	 animation: bg-scrolling-reverse 0.92s infinite;
+	/* IE 10+ */
+	 -webkit-animation-timing-function: linear;
+	 -moz-animation-timing-function: linear;
+	 -o-animation-timing-function: linear;
+	 animation-timing-function: linear;
+}
+
+.mainContainer {
+    margin-top: 5em;
+    margin-left: 5em;
+    margin-bottom: 5em;
+    position: relative;
+}
+
+.header {
+    display: inline-flex;
+    align-items: center;
+    padding: 1em;
+}
+
+.header h1 {
+    font-size: 500%;
+}
+
+.nav {
+    display: table;
+    width: 500px;
+    border-collapse:collapse;
+}
+
+.nav li {
+    display: table-cell;
+    text-align: center;
+    border:#888 1px solid;
+}
+
+.profileImage {
+    border-radius: 50%;
+    aspect-ratio: 1;
+    width: 10em;
+    margin-right: 2.5em;
+}
+
+.description {
+    color: #9C9A9E;
+    max-width: 30vw;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.socials {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: inline-flex;
+    gap: 5em;
+}
+
+.socials a {
+    color: white;
+    text-decoration: none;
+}
+
+.socials a:hover {
+    color: #9C9A9E;
 }
