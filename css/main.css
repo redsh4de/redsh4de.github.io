@@ -52,6 +52,11 @@ body {
 		 background-position: 50px 50px;
 	}
 }
+@keyframes cursor-blink {
+	to {
+	  visibility: hidden;
+	}
+  }
 /* Main styles */
  body {
 	/* img size is 50x50 */
@@ -87,6 +92,11 @@ body {
     font-size: 500%;
 }
 
+.header h1::after {
+	content: "_";
+	animation: cursor-blink 1.5s steps(2, start) infinite;
+}
+
 .nav {
     display: table;
     width: 500px;
@@ -111,6 +121,10 @@ body {
     max-width: 30vw;
     text-align: justify;
     text-justify: inter-word;
+}
+
+.description ul {
+	columns: 2;
 }
 
 .socials {
