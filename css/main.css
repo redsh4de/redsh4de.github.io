@@ -111,7 +111,7 @@ body {
 }
 
 .description li::marker {
-	content: "⇾ ";
+	content: "> ";
 }
 
 .profileImage {
