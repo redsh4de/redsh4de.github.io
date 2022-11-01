@@ -60,7 +60,7 @@ body {
 	font-family: monospace;
 	display: flex;
 	justify-content: left;
-	font-size: 150%;
+	font-size: 125%;
 	user-select: none;
 	text-transform: lowercase;
 	/*-------------------*/
@@ -81,16 +81,13 @@ body {
 }
 
 .mainContainer {
-	margin-top: 5em;
-	margin-left: 5em;
-	margin-bottom: 5em;
+	margin: 5em;
 	position: relative;
 }
 
 .header {
 	display: inline-flex;
 	align-items: center;
-	padding: 1em;
 }
 
 .header h1 {
@@ -145,4 +142,20 @@ body {
 
 .socials a:hover {
 	color: #9C9A9E;
+}
+
+@media screen and (max-width: 800px) {
+	.header {
+		display: flex;
+		flex-direction: column;
+	}
+	.header h1 {
+		margin-top: 0;
+	}
+	.mainContainer {
+		margin: 1em;
+	}
+	.description {
+		max-width: 100%;
+	}
 }
