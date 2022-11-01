@@ -124,8 +124,6 @@ body {
 .description {
 	color: #9C9A9E;
 	max-width: 30vw;
-	text-align: justify;
-	text-justify: inter-word;
 }
 
 .description ul {
