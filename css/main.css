@@ -78,11 +78,13 @@ body {
 	-moz-animation-timing-function: linear;
 	-o-animation-timing-function: linear;
 	animation-timing-function: linear;
+	margin: 0;
 }
 
 .mainContainer {
 	margin: 5em;
 	position: relative;
+	width: 100%;
 }
 
 .header {
@@ -97,12 +99,6 @@ body {
 .header h1::after {
 	content: "_";
 	animation: cursor-blink 1.75s steps(2, start) infinite;
-}
-
-.nav {
-	display: table;
-	width: 500px;
-	border-collapse: collapse;
 }
 
 .description ul {
@@ -130,9 +126,22 @@ body {
 	columns: 2;
 }
 
+nav {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border: 1px solid white;
+	padding: 1em;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+}
+
 .socials {
 	position: absolute;
-	left: 0;
+	right: 0;
 	bottom: 0;
 	display: inline-flex;
 	gap: 5em;
